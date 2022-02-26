@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<Script Language="JavaScript">
+function LogIn(){
+loggedin=false;
+username="";
+password="";
+username=prompt("Username:","");
+
+password=prompt("Password:","");
+
+if (username=="DutyOfficer" && password=="P@ssw0rd"){
+loggedin=true;
+window.location="thirdpage.html";
+}
+if (loggedin==false){
+alert ("Invalid Login!");
+}
+}
+</script>
+
+
+<body>
+<body bgcolor="#FF69B4";>
+<center>
+<form><input type=button value="LogIn!" onClick="LogIn()"></form>
+</center>
+</body>
+
+</head>
+
+</html>
